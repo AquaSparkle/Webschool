@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Webschool</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="open">OPENED</string>
+    <string name="close">CLOSED</string>
+    <string name="copywrite">\u00A9 2017. GESCIS Technologies Pvt Ltd.</string>
+    <string name="samcopywrite">\u00A9 2017. SparkIT Techno Solutions Pvt Ltd.</string>
+    <string name="download">Download</string>
+    <string name="cancel">Cancel</string>
+    <string name="grant">Grant</string>
+    <string name="allowPermission">Allow permission</string>
+    <string name="permissionRequest">This app needs camera and storage permissions.</string>
+</resources>

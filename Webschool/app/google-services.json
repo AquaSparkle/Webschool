@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "802570261472",
+    "firebase_url": "https://web-school-2db8a.firebaseio.com",
+    "project_id": "web-school-2db8a",
+    "storage_bucket": "web-school-2db8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802570261472:android:b8e8642f4c94abdd",
+        "android_client_info": {
+          "package_name": "gescis.webschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802570261472-r1goq9afjtuc7mbprmim836fus093mqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPSy6Lw_4TwRv6IEFZ7k-9gn2OU32p3Xg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

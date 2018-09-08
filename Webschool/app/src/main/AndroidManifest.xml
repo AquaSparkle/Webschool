@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gescis.webschool">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:name="gescis.webschool.Wschool"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="gescis.webschool.Splash_screen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="gescis.webschool.Login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+        <activity android:name="gescis.webschool.Student_selection"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name="gescis.webschool.Employactivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"></activity>
+
+        <activity android:name="gescis.webschool.Studentactivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask">
+        </activity>
+
+        <activity android:name="gescis.webschool.utils.TraknpayRequestActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name="gescis.webschool.utils.TraknpayResponseActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name="gescis.webschool.ImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/imageTheme"></activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <service
+            android:name="gescis.webschool.utils.FBInstanceIDservice">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="gescis.webschool.utils.FBMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDncJUIPUikmnpMXScyyBgjOyIvz4uAzyk" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
